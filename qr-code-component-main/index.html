@@ -19,21 +19,26 @@
       margin: 0;
       padding: 0;
 
-      display: grid;
-      align-items: center;
-      justify-content: center;
-
       background-color: hsl(212, 43%, 88%);
 
       font-size: 15px;
       font-family: 'Outfit', sans-serif;
     }
 
+    main{
+      height: 100%;
+      width: 100%;
+
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
     .card{
       --size: 300px;
       max-width: var(--size);
 
-      padding: 10px;
+      padding: 15px;
 
       text-align: center;
 
@@ -44,20 +49,20 @@
     }
 
     .card__body{
-      padding: 0 24px 10px;
+      padding: 5px 15px 10px;
     }
 
     .card__body h3{
-      font-size: 1.3em;
+      font-size: 1.4em;
     }
 
     .card__body p{
       color: hsl(220, 15%, 55%);
-      font-size: 0.9em;
+      font-size: 1em;
     }
 
     .card__head{
-      padding: 5px;
+      padding: 2px;
     }
 
     .card__head img{
@@ -68,12 +73,14 @@
 
 </head>
 <body>
-  <div class="card">
-    <div class="card__head"><img src="images/image-qr-code.png" alt="QR" width="100%" draggable="false"></div>
-    <div class="card__body">
-      <h3>Improve your front-end skills by building projects</h3>
-      <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <main>
+    <div class="card">
+      <div class="card__head"><img src="images/image-qr-code.png" alt="QR" width="100%" draggable="false"></div>
+      <div class="card__body" role="card">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
     </div>
-  </div>
+  </main>
 </body>
 </html>
